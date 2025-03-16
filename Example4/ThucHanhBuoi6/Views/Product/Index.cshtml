@@ -1,0 +1,88 @@
+﻿<div id="product-list"></div>
+
+<form id="product-form">
+    <input type="hidden" id="product-id" />
+    <input type="text" id="product-name" placeholder="Product Name" required />
+    <input type="number" id="product-price" placeholder="Price" required />
+    <button type="submit">Save</button>
+</form>
+
+<script>
+    // Lấy danh sách sản phẩm
+    function loadProducts() {
+        fetch('/Product/GetProducts')
+            .then(response => response.json())
+            .then(data => {
+                let html = '';
+                data.forEach(product => {
+                    html += `<div>
+                                    <span>${product.name} - $${product.price}</span>
+                                    <button onclick="editProduct(${product.id})">Edit</button>
+                                    <button onclick="deleteProduct(${product.id})">Delete</button>
+                                </div>`;
+                });
+                document.getElementById('product-list').innerHTML = html;
+            });
+    }
+
+    // Thêm hoặc cập nhật sản phẩm
+    document.getElementById('product-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const id = document.getElementById('product-id').value;
+        const name = document.getElementById('product-name').value;
+        const price = document.getElementById('product-price').value;
+
+        const url = id ? '/Product/UpdateProduct' : '/Product/AddProduct';
+        const product = { id: id || 0, name, price };
+
+        fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(product)
+        })
+            .then(response => response.json())
+            .then(data => {
+                loadProducts();
+                document.getElementById('product-form').reset(); // Xóa form sau khi thêm/cập nhật
+            });
+    });
+
+    // Sửa sản phẩm
+    function editProduct(id) {
+        fetch('/Product/GetProducts')
+            .then(response => response.json())
+            .then(data => {
+                const product = data.find(p => p.id === id);
+                document.getElementById('product-id').value = product.id;
+                document.getElementById('product-name').value = product.name;
+                document.getElementById('product-price').value = product.price;
+            });
+    }
+
+    // Xóa sản phẩm
+    // Xóa sản phẩm
+    function deleteProduct(id) {
+        fetch('/Product/DeleteProduct', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(id) // Gửi id dưới dạng JSON đơn giản
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.json(); // Đảm bảo phản hồi trả về JSON
+                } else {
+                    throw new Error('Xóa sản phẩm thất bại');
+                }
+            })
+            .then(data => {
+                console.log(`Sản phẩm với ID ${data} đã được xóa.`);
+                loadProducts(); // Tải lại danh sách sản phẩm sau khi xóa
+            })
+            .catch(error => console.error('Lỗi khi xóa sản phẩm:', error));
+    }
+
+
+
+    // Load sản phẩm khi trang load
+    loadProducts();
+</script>

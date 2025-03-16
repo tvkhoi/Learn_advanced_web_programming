@@ -1,0 +1,22 @@
+﻿@model List<Thuchanhbuoi4_5.ViewModels.UserViewModel>
+
+<h2>Danh sách User</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Username</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

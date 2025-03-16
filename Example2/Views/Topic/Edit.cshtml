@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Example2.Models.Topic
+<h2>Sửa Chủ đề</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label for="Title">Tiêu đề</label>
+        <input type="text" class="form-control" id="Title" name="Title" asp-for="Title" required />
+    </div>
+    <div class="form-group">
+        <label for="Description">Mô tả</label>
+        <textarea class="form-control" id="Description" name="Description" asp-for="Description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>

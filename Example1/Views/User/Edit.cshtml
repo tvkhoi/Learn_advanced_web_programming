@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    ViewBag.Title = "Chỉnh sửa người dùng";
+
+    <h1>@ViewBag.Title</h1>
+
+    <!-- Hiển thị thông báo lỗi -->
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <p style="color: red;">@ViewBag.ErrorMessage</p>
+    }
+
+    <form method="post" asp-action="Edit">
+        <!-- Truyền tên người dùng cũ vào form -->
+        <input type="hidden" name="oldUserName" value="@ViewBag.UserName" />
+
+        <label for="newUserName">Tên người dùng mới:</label>
+        <input type="text" id="newUserName" name="newUserName" value="@ViewBag.UserName" />
+
+        <button type="submit">Cập nhật</button>
+    </form>
+}
+

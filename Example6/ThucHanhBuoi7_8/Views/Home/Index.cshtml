@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Trang Chủ";
+    var session = HttpContextAccessor.HttpContext.Session;
+    var username = session.GetString("Username");
+    var loginCount = session.GetInt32("LoginCount") ?? 0;
+}
+
+<h2>Chào mừng bạn đến với trang web!</h2>
+<p>Bạn đã truy cập trang này @ViewBag.SoLanTruyCap lần.</p>
+

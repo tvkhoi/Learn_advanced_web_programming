@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Bảng điều khiển";
+}
+
+<h2>Chào mừng @ViewBag.Username!</h2>
+<p>Bạn đã đăng nhập @ViewBag.LoginCount lần trong phiên làm việc này.</p>
+<a href="@Url.Action("Logout", "Account")">Đăng xuất</a>

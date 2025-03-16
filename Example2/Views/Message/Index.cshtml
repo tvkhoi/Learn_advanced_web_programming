@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Example2.Models.Message>
+
+<h2>Danh sách Tin nhắn</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nội dung</th>
+            <th>Người gửi</th>
+            <th>Chủ đề</th>
+            <th>Ngày gửi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td>@message.Id</td>
+                <td>@message.Content</td>
+                <td>@(message.User != null ? message.User.FullName : "Không xác định")</td>  <!-- Null check for User -->
+                <td>@(message.Topic != null ? message.Topic.Title : "Không xác định")</td>  <!-- Null check for Topic -->
+                <td>@message.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

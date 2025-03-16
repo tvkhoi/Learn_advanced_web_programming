@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SanPham>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - QuanLiSanPham</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QuanLiSanPham.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <h2>Danh sách sản phẩm</h2>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Mô tả</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@(item.Ten)</td>
+                                <td>@(item.Gia)</td>
+                                <td>@(item.MoTa)</td>
+                                <td>
+                                    <button>Sửa</button> || <button>Xóa</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4">Không có sản phẩm nào.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - QuanLiSanPham - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+</body>
+</html>

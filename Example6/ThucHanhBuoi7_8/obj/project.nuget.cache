@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "3xLOHi3wtRyj2aIvkhyA8wimBIkWK9Dj2q4wAjmQYQs8MEl5fxB5jF03VB5Bd3qNma5X4GAlCC9lIwNQyaiIjQ==",
+  "success": true,
+  "projectFilePath": "D:\\Learn_advanced_web_programming\\Example6\\ThucHanhBuoi7_8\\ThucHanhBuoi7_8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
