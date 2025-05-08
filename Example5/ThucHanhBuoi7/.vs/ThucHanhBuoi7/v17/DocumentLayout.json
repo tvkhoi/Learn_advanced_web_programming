@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|d:\\learn_advanced_web_programming\\example5\\thuchanhbuoi7\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A112E35C-B306-4F52-B770-E415557F5886}|ThucHanhBuoi7.csproj|D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 59,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,15 +74,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T07:57:12.647Z"
+              "WhenOpened": "2025-03-05T07:57:12.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,20 +99,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAMAAACgynWinJMlwA4AAAArAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwBUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T01:38:01.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Index.cshtml",
@@ -123,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -135,13 +136,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "D:\\Learn_advanced_web_programming\\Example5\\ThucHanhBuoi7\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAawA4AAAAWAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAQwAwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T12:15:14.756Z"
             }

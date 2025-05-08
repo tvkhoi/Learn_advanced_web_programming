@@ -1,0 +1,24 @@
+﻿@model List<UserDomainModel>
+
+<h1>User List</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+		<tr>
+			<th>Id</th>
+			<th>Username</th>
+			<th>Email</th>
+			<th>Role</th>
+		</tr>
+    </thead>
+    <tbody>
+		@foreach(var obj in Model){
+			<tr>
+				<td>@obj.Id</td>
+				<td>@obj.Username</td>
+				<td>@obj.Email</td>
+				<td>@obj.Role</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
